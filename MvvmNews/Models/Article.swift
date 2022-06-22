@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct ArticleList: Decodable {
+    var articles : [Article]
+}
+
+struct Article: Decodable {
+    
+    let title: String?
+    let description: String?
+    
+}
